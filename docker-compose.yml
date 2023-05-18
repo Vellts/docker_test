@@ -1,0 +1,16 @@
+version: '3'
+services:
+  apiv1:
+    image: apiv1
+    build:
+      context: ./apiv1
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+  apiv2:
+    image: apiv2
+    build:
+      context: ./apiv2
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
