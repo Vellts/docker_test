@@ -14,3 +14,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3001:3001"
+  frontend:
+    image: frontend
+    build:
+      context: ./front/server
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3002"
